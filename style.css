@@ -1,0 +1,214 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: white;
+    position: relative;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+  
+  .background-circles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+    background: 
+      radial-gradient(circle 200px at -50px 20px, #00cfff30 99%, transparent 100%),
+      radial-gradient(circle 200px at 100% 35%, #00cfff30 99%, transparent 100%);
+  }
+  
+  .container {
+    position: relative;
+    z-index: 1;
+    padding: 30px 20px;
+    max-width: 480px;
+    margin: auto;
+  }
+  
+  .data-box {
+    font-size: 14px;
+    color: #000;
+    margin-bottom: 20px;
+  }
+  
+  .icon {
+    float: right;
+    width: 50px;
+    margin-top: -60px;
+  }
+  
+  .titulo {
+    font-size: 32px;
+    font-weight: 300;
+    margin: 40px 0 20px;
+    line-height: 1.2;
+  }
+  
+  .titulo strong {
+    font-weight: bold;
+  }
+  
+  .btn-primario {
+    background-color: #00bfff;
+    color: white;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 40px;
+  }
+
+  a {
+    text-decoration: none;   /* remove o sublinhado */
+    color: inherit;          /* usa a cor do texto pai */
+  }
+  
+  a:visited {
+    color: inherit;          /* mantém a cor após clicar */
+  }
+  
+  a:focus,
+  a:active {
+    outline: none;           /* remove o contorno azul */
+  }
+  
+  
+  .login-box {
+    text-align: center;
+  }
+  
+  .texto-bold {
+    font-weight: bold;
+    color: #001b3d;
+  }
+  
+  .texto-leve {
+    font-size: 14px;
+    color: #555;
+    margin: 5px 0 15px;
+  }
+  
+  .btn-secundario {
+    background-color: #00bfff;
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .avaliacao {
+    background-color: #00bfff;
+    padding: 30px 20px;
+    text-align: center;
+    color: white;
+  }
+  
+  .avaliacao h2 {
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+  
+  .avaliacao p {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  
+  .avaliacao input,
+  .avaliacao textarea {
+    width: 94%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+  }
+  
+  .avaliacao textarea {
+    resize: none;
+    height: 100px;
+  }
+  
+  .btn-secundario.branco {
+    background-color: white;
+    color: #00bfff;
+    font-weight: bold;
+  }
+  
+  .footer {
+    background-color: white;
+    padding: 40px 20px 20px;
+    text-align: center;
+    font-size: 14px;
+    position: relative;
+  }
+  
+  .footer-icon {
+    width: 40px;
+    margin-bottom: 10px;
+  }
+  
+  .logo-box p {
+    color: #333;
+    margin: 10px 0 30px;
+    font-size: 13px;
+  }
+  
+  .footer-links {
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+  
+  .footer-links div {
+    min-width: 100px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-links h4 {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #001b3d;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-links li {
+    margin-bottom: 6px;
+  }
+  
+  .footer-links a {
+    text-decoration: none;
+    color: #475467;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 10px;
+  }
+  
+  .social-icons img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .copy {
+    font-size: 12px;
+    color: #888;
+  }
+  
