@@ -5,6 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tela Opinião</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    #formulario-google {
+      display: none;
+      margin-top: 20px;
+    }
+  </style>
 </head>
 <body>
   <div class="background-circles"></div>
@@ -22,9 +28,6 @@
       sua experiência<br />
       <strong>ainda melhor</strong>
     </h1>
-
-    <button class="btn-primario">Enviar Opinião</button>
-
     <div class="login-box">
       <p class="texto-bold">Deseja visualizar suas opiniões?</p>
       <p class="texto-leve">Faça login ou registre sua conta.</p>
@@ -33,16 +36,15 @@
     </div>
   </div>
 
-  <script src="script.js"></script>
   <section class="avaliacao">
-    <h2>Nos avalie ✅</h2>
-    <p>Nos envie um e-mail com sua opinião ou sugestão!</p>
-  
-    <input type="email" placeholder="Insira seu email" />
-    <textarea maxlength="200" placeholder="Insira sua opinião em até 200 caracteres"></textarea>
-    <button class="btn-secundario branco">Avaliar</button>
+    <h2><button onclick="mostrarFormulario()" class="btn-secundario">Nos avalie ✅</button></h2>
+    <p>Nos envie sua opinião pelo formulário abaixo!</p>
+
+    <div id="formulario-google">
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdL-reBy7llapucv6h9awdRiFJu-JHsGaZqJn6sYTVgvP0xZA/viewform?embedded=true" width="100%" height="1391" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+    </div>
   </section>
-  </body>
+
   <footer class="footer">
     <div class="logo-box">
       <img src="img/Imagem_do_WhatsApp_de_2025-05-03_à_s__14.36.18_fef9f843-removebg-preview.png" alt="Bus Track" class="footer-icon" />
@@ -51,7 +53,7 @@
       </div>
       <p>Facilitando sua experiência com tecnologia que conecta você ao seu destino.</p>
     </div>
-  
+
     <div class="footer-links">
       <div>
         <h4>Social</h4>
@@ -81,14 +83,22 @@
         </ul>
       </div>
     </div>
-  
+
     <div class="social-icons">
       <img src="img/Linkedin.svg" alt="LinkedIn" />
       <img src="img/Facebook.svg" alt="Facebook" />
       <img src="img/Instagram.svg" alt="Instagram" />
       <img src="img/github.svg" alt="GitHub" />
     </div>
-  
+
     <p class="copy">© 2025 Bus Track. All rights reserved.</p>
   </footer>
+
+  <script>
+    function mostrarFormulario() {
+      const form = document.getElementById("formulario-google");
+      form.style.display = "block";
+    }
+  </script>
+</body>
 </html>
